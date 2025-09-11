@@ -51,6 +51,8 @@ nav {
     font-family: Montserrat, arial;
     text-align: center;
     font-weight: 400;
+    background-color: burlywood;
+    padding: 20px;
 }
 /* modificamos dentro del formulario */
 .formularioInfoPersonal {
@@ -64,11 +66,11 @@ nav {
 }
 .nombreFormulario {
     font-weight: bold;
-    padding: 0 0 5px 0;
+    padding: 0 0 5px 5px;
 }
 .emailFormulario {
     font-weight: bold;
-    padding: 0 0 5px 0;
+    padding: 0 0 5px 5px;
 }
 .labelComentarioForm {
     font-family: Montserrat;
@@ -91,7 +93,8 @@ nav {
 
 .comentarioForm {
     font-weight: bold;
-    width: 95%;  
+    width: 95%;
+    padding: 5px 0 0 5px;  
 }
 .divComentarioForm {
     padding: 0 0 0 10px;
