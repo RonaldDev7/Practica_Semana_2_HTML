@@ -11,9 +11,10 @@
         <meta property="OG:title" content="Portafolio">
         <meta property="OG:image" content="img/icono.png">
         <meta property="OG:description" content="Esta pagina se trata sobre mi portafolio">
-        <title>Ejercicio 1</title>
+        <title>Portafolio</title>
         <link rel="icon" href="img/icono.png" type="image/png">
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/fonts.css">
     </head>
     <body>
         <header>
@@ -21,17 +22,18 @@
             <h2>Desarrollador en formacion</h2>
         </header>
         <nav>        
-            <a title="Enlace a la seccion de inicio" href="#inicio">Inicio</a>
-            <a title="Enlace a la seccion de sobre mi" href="#sobre_mi">Sobre mi</a>
-            <a title="Enlace a la seccion de proyectos" href="#proyectos">Proyectos</a>
-            <a title="Enlace a la seccion de cobtacto" href="#contacto">Contacto</a>
+            <a class="navInicio" title="Enlace a la seccion de inicio" href="#inicio">Inicio</a>
+            <a class="navSobreMi" title="Enlace a la seccion de sobre mi" href="#sobre_mi">Sobre mi</a>
+            <a class="navProyectos" title="Enlace a la seccion de proyectos" href="#proyectos">Proyectos</a>
+            <a class="navContacto" title="Enlace a la seccion de cobtacto" href="#contacto">Contacto</a>
         </nav>
         <main>
-            <section id="sobre_mi">
+            <section class="sobreMi" id="sobre_mi">
                 <img class="imagenRonald" width="200px" height="245px" src="img/Yo.jpg" alt="Soy yo" title="Una imagen del creador de la pagina">
-                <p>Soy un estudiante de la universidad de la Costa CUC de Colombia
-                <br> y tambien un desarrollador junior apasionado por aprender nuevas
-                <br> tecnologias y lenguajes de progamacion.
+                <p class="parrafos">
+                Soy un estudiante de la universidad de la Costa CUC de Colombia
+                y tambien un desarrollador junior apasionado por aprender nuevas
+                tecnologias y lenguajes de progamacion.
                 </p>
                 <ul class="aprendido">
                     <li>Manejo de Git y GitHub</li>
@@ -44,7 +46,7 @@
                     <li>Construir proyectos con React</li>
                 </ol>
             </section>
-            <section id="proyectos">
+            <section class="seccionTabla" id="proyectos">
                 <table border="1"">
                     <tr>
                         <th>Nombre</th>
@@ -69,32 +71,28 @@
                 </table>
             </section>
             <section id="contacto">
-                <form action="">
-                    <fieldset>
-                        <legend class="legendFormulario">Informacion de contacto</legend> <br>
-                        <div>
-                            <label class="nombreFormulario" for="nombre">Nombre</label>
-                            <input type="text" name="nombres" id="nombre">
-                        </div>
-                        <div>
-                            <label class="emailFormulario" for="email">Email</label>
-                            <input type="email" name="emails" id="email" placeholder="guess123@example.com">
-                        </div>
-                        <div>
-                            <label class="comentarioFormulario" for="comentario">Comentario</label> <br>
-                            <textarea rows="8" name="comentarios" id="comentario" placeholder="Ingrese un comentario" ></textarea>
-                        </div>
-                        <div>
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </fieldset>
-                    <div>
-                        <label class="motivoFormulario" for="motivo">Motivo de contacto</label> <br>
-                        <select name="motivos" id="motivo">
-                            <option value="motivo_1">Motivo 1</option>
-                            <option value="Motivo_2">Motivo 2</option>
-                            <option value="Motivo_3" selected>Motivo 3</option>
-                        </select>
+                <form class="formularioInfoPersonal" action="">
+                    <legend class="legendFormulario">Informacion de contacto</legend>
+                    <div class="divNombreForm">
+                        <input class="nombreFormulario" type="text" name="nombres" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="divEmailForm">
+                        <input class="emailFormulario" type="email" name="emails" id="email" placeholder="guess123@example.com">
+                    </div>
+                    <div class="divComentarioForm">
+                        <label class="labelComentarioForm" for="comentario">Comentario</label>
+                        <textarea class="comentarioForm" rows="8" name="comentarios" id="comentario" placeholder="Ingrese un comentario" ></textarea>
+                    </div>
+                    <div class="divMotivoForm">
+                    <label class="labelMotivoForm" for="motivo">Motivo de contacto</label>
+                    <select name="motivos" id="motivo">
+                        <option value="motivo_1">Motivo 1</option>
+                        <option value="Motivo_2">Motivo 2</option>
+                        <option value="Motivo_3" selected>Motivo 3</option>
+                    </select>
+                    </div>
+                    <div class="divEnviarForm">
+                        <button class="enviarForm" type="submit">Enviar</button>
                     </div>
                 </form>
             </section>
