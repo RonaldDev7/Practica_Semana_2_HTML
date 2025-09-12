@@ -18,8 +18,8 @@
     </head>
     <body>
         <header>
-            <h1 id="inicio">Ronald Alvarez</h1>
-            <h2>Desarrollador en formacion</h2>
+            <h1 class="tituloPrincipal" id="inicio">Ronald Alvarez</h1>
+            <h2 class="subtituloPrincipal">Desarrollador en formacion</h2>
         </header>
         <nav>        
             <a class="navInicio" title="Enlace a la seccion de inicio" href="#inicio">Inicio</a>
@@ -30,7 +30,7 @@
         <main>
             <section class="sobreMi" id="sobre_mi">
                 <img class="imagenRonald" width="200px" height="245px" src="img/Yo.jpg" alt="Soy yo" title="Una imagen del creador de la pagina">
-                <p class="parrafos">
+                <p class="pSobreMi parrafos">
                 Soy un estudiante de la universidad de la Costa CUC de Colombia
                 y tambien un desarrollador junior apasionado por aprender nuevas
                 tecnologias y lenguajes de progamacion.
@@ -40,33 +40,33 @@
                     <li>HTML semantico</li>
                     <li>Resolucion de problemas y constancia</li>
                 </ul>
-                <ol style="list-style-type: upper-roman;">
+                <ol class="listaOrdenadaSM" style="list-style-type: upper-roman;">
                     <li>Dominar CSS</li>
                     <li>Aprender JavaScript intermedio-avanzado</li>
                     <li>Construir proyectos con React</li>
                 </ol>
             </section>
             <section class="seccionTabla" id="proyectos">
-                <table border="1"">
+                <table class="tabla">
                     <tr>
-                        <th>Nombre</th>
-                        <th>Descripcion</th>
-                        <th>Enlace</th>
+                        <th class="columna">Nombre</th>
+                        <th class="columna">Descripcion</th>
+                        <th class="columna">Enlace</th>
                     </tr>
                     <tr>
-                        <td>Portafolio</td>
-                        <td>Mi primera página personal hecha en HTML</td>
-                        <td><a href="portafolio.html">Ver proyecto</a></td>
+                        <td class="columna">Portafolio</td>
+                        <td class="columna">Mi primera página personal hecha en HTML</td>
+                        <td class="columna"><a href="portafolio.html">Ver proyecto</a></td>
                     </tr>
                     <tr>
-                        <td>Notas App</td>
-                        <td>Aplicación para tomar notas con HTML y CSS</td>
-                        <td><a href="#">Ver proyecto</a></td>
+                        <td class="columna">Notas App</td>
+                        <td class="columna">Aplicación para tomar notas con HTML y CSS</td>
+                        <td class="columna"><a href="#">Ver proyecto</a></td>
                     </tr>
                     <tr>
-                        <td>Blog Dev</td>
-                        <td>Un blog simple sobre programación</td>
-                        <td><a href="#">Ver proyecto</td>
+                        <td class="columna">Blog Dev</td>
+                        <td class="columna">Un blog simple sobre programación</td>
+                        <td class="columna"><a href="#">Ver proyecto</td>
                     </tr>
                 </table>
             </section>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="divMotivoForm">
                     <label class="labelMotivoForm" for="motivo">Motivo de contacto</label>
-                    <select name="motivos" id="motivo">
+                    <select class="motivoForm" name="motivos" id="motivo">
                         <option value="motivo_1">Motivo 1</option>
                         <option value="Motivo_2">Motivo 2</option>
                         <option value="Motivo_3" selected>Motivo 3</option>
@@ -98,7 +98,7 @@
             </section>
         </main>
         <footer>
-            <a title="link de mi perfil de GitHub" href="https://github.com/RonaldDev7">Mi GitHub</a>
+            <a class="gitHub" title="link de mi perfil de GitHub" href="https://github.com/RonaldDev7">Mi GitHub</a>
             <p class="infoFinal">Ronald Alvarez, 2025</p>
         </footer>
     </body>
