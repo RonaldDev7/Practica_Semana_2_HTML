@@ -18,8 +18,7 @@
     </head>
     <body>
         <header>
-            <h1 class="tituloPrincipal" id="inicio">Ronald Alvarez</h1>
-            <h2 class="subtituloPrincipal">Desarrollador en formacion</h2>
+            <h1 class="tituloPrincipal" id="inicio">Desarrollador en formacion</h1>
         </header>
         <nav>        
             <a class="navInicio" title="Enlace a la seccion de inicio" href="#inicio">Inicio</a>
@@ -29,24 +28,32 @@
         </nav>
         <main>
             <section class="sobreMi" id="sobre_mi">
-                <img class="imagenRonald" width="200px" height="245px" src="img/Yo.jpg" alt="Soy yo" title="Una imagen del creador de la pagina">
+                <div class="boxImagenRonald">
+                    <img class="imagenRonald" src="img/Yo.jpg" alt="Una imagen del creador de la pagina">
+                    <p class="pTarjetaPresentacion">Ronald Alvarez</p>
+                </div>
                 <p class="pSobreMi parrafos">
                 Soy un estudiante de la universidad de la Costa CUC de Colombia
                 y tambien un desarrollador junior apasionado por aprender nuevas
                 tecnologias y lenguajes de progamacion.
                 </p>
-                <ul class="aprendido">
-                    <li>Manejo de Git y GitHub</li>
-                    <li>HTML semantico</li>
-                    <li>Resolucion de problemas y constancia</li>
-                </ul>
-                <ol class="listaOrdenadaSM" style="list-style-type: upper-roman;">
-                    <li>Dominar CSS</li>
-                    <li>Aprender JavaScript intermedio-avanzado</li>
-                    <li>Construir proyectos con React</li>
-                </ol>
+                <div class="listasSobreMi">
+                    <p class="pListaAprendida">Habilidades aprendidas</p>
+                    <ul class="aprendido">
+                        <li>Manejo de Git y GitHub</li>
+                        <li>HTML semantico</li>
+                        <li>Resolucion de problemas y constancia</li>
+                    </ul>
+                    <p class="pListaPorAprender">Habilidades por aprender a futuro</p>
+                    <ol class="listaOrdenadaSM" style="list-style-type: upper-roman;">
+                        <li>Dominar CSS</li>
+                        <li>Aprender JavaScript intermedio-avanzado</li>
+                        <li>Construir proyectos con React</li>
+                    </ol>
+                </div>
             </section>
             <section class="seccionTabla" id="proyectos">
+                <p class="pTablaProyecto">Proyectos</p>
                 <table class="tabla">
                     <tr>
                         <th class="columna">Nombre</th>
