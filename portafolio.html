@@ -20,12 +20,16 @@
         <header>
             <h1 class="tituloPrincipal" id="inicio">Desarrollador en formacion</h1>
         </header>
+
+        <!--BARRA DE NAVEGACION-->
         <nav>        
             <a class="navInicio" title="Enlace a la seccion de inicio" href="#inicio">Inicio</a>
             <a class="navSobreMi" title="Enlace a la seccion de sobre mi" href="#sobre_mi">Sobre mi</a>
             <a class="navProyectos" title="Enlace a la seccion de proyectos" href="#proyectos">Proyectos</a>
             <a class="navContacto" title="Enlace a la seccion de cobtacto" href="#contacto">Contacto</a>
         </nav>
+        
+        <!--BLOQUE PRINCIPAL-->
         <main>
             <section class="sobreMi" id="sobre_mi">
                 <div class="boxImagenRonald">
@@ -38,7 +42,7 @@
                 tecnologias y lenguajes de progamacion.
                 </p>
                 <div class="listasSobreMi">
-                    <p class="pListaAprendida">Habilidades aprendidas</p>
+                    <p class="pListaAprendida">Habilidades y cualidades</p>
                     <ul class="aprendido">
                         <li>Manejo de Git y GitHub</li>
                         <li>HTML semantico</li>
@@ -79,24 +83,43 @@
             </section>
             <section id="contacto">
                 <form class="formularioInfoPersonal" action="">
-                    <legend class="legendFormulario">Informacion de contacto</legend>
-                    <div class="divNombreForm">
-                        <input class="nombreFormulario" type="text" name="nombres" id="nombre" placeholder="Nombre">
+                    <p class="pFormTitulo">Formulario de contacto</p>
+                    <fieldset class="fieldsetFormInfoPersonal">
+                        <legend class="legendFormulario">Informacion basica</legend>
+                        <div class="divForm">
+                            <label class="labelFormInfoPersonal" for="nombre">Nombre</label>
+                            <input class="inputInfoPersonal" type="text" name="nombres" id="nombre" placeholder="Jonh Doe">
+                        </div>
+                        <div class="divForm">
+                            <label class="labelFormInfoPersonal" for="edad">Edad</label>
+                            <input class="inputInfoPersonal" type="number" name="edades" id="edad" placeholder="18">
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldsetFormInfoPersonal">
+                        <legend class="legendFormulario">Informacion de contacto</legend>
+                        <div class="divForm">
+                            <label class="labelFormInfoPersonal" for="email">Email</label>
+                            <input class="inputInfoPersonal" type="email" name="emails" id="email" placeholder="guess123@example.com">
+                        </div>
+                        <div class="divForm">
+                            <label class="labelFormInfoPersonal" for="telefono">Telefono</label>
+                            <input class="inputInfoPersonal" type="number" name="telefonos" id="telefono" placeholder="Ingrese su numero de telefono">
+                        </div>
+                    </fieldset>
                     </div>
-                    <div class="divEmailForm">
-                        <input class="emailFormulario" type="email" name="emails" id="email" placeholder="guess123@example.com">
-                    </div>
-                    <div class="divComentarioForm">
+                    <div class="divForm">
                         <label class="labelComentarioForm" for="comentario">Comentario</label>
-                        <textarea class="comentarioForm" rows="8" name="comentarios" id="comentario" placeholder="Ingrese un comentario" ></textarea>
+                        <textarea rows="9" class="textareaInfoPersonal" rows="8" name="comentarios" id="comentario" placeholder="Ingrese un comentario..." ></textarea>
                     </div>
-                    <div class="divMotivoForm">
+                    <div class="divMotivoLabel">
                     <label class="labelMotivoForm" for="motivo">Motivo de contacto</label>
-                    <select class="motivoForm" name="motivos" id="motivo">
-                        <option value="motivo_1">Motivo 1</option>
-                        <option value="Motivo_2">Motivo 2</option>
-                        <option value="Motivo_3" selected>Motivo 3</option>
-                    </select>
+                    </div>
+                    <div class="divMotivo">
+                        <select class="motivoForm" name="motivos" id="motivo">
+                            <option value="user1">Motivo 1</option>
+                            <option value="user2">Motivo 2</option>
+                            <option value="user3" selected>Motivo 3</option>
+                        </select>
                     </div>
                     <div class="divEnviarForm">
                         <button class="enviarForm" type="submit">Enviar</button>

@@ -67,7 +67,7 @@ header {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(transparent 30%, #151C47);
+    background: linear-gradient(transparent 30%, #788ca1);
 }
 /*Modificamos parrafos*/
 .parrafos {
@@ -158,7 +158,7 @@ footer {
 .pListaAprendida {
     text-align: center;
     margin: 10px;
-    width: 72%;
+    width: 73%;
     color: #205C5A;
     text-shadow: 0 0 1px #184746;
     font-weight: bold;
@@ -192,6 +192,13 @@ footer {
     border: 2px solid black;
 }
 /* modificamos dentro del formulario */
+.pFormTitulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: azure;
+    font-size: 21px;
+}
 .formularioInfoPersonal {
     background-color: #205C5A;
     border: 4px solid #184746   ;
@@ -199,64 +206,72 @@ footer {
     width: 90%;
     margin: auto;
     max-width: 600px;
+    box-shadow: 0 0 15px #184746;
+}
+.fieldsetFormInfoPersonal {
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #124543;
+    margin-bottom: 20px;
+}
+.divForm {
+    padding: 0 0 10px 10px;
+}
+.inputInfoPersonal {
+    font-weight: bold;
+    padding: 0 0 5px 5px;
+    border-radius: 8px;
+    border: none;
+}
+.textareaInfoPersonal {
+    font-weight: bold;
+    font-family: Montserrat, arial;
+    min-width: 95%;
+    min-height: 150px;
+    padding: 5px 0 0 5px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+}
+.labelFormInfoPersonal {
+    font-weight: bold;
+    color: azure;
+    line-height: 2;
+    text-shadow: 0 0 12px #0007;
 }
 .legendFormulario {
+    text-align: justify;
     font-weight: bold;
     color: azure;
     padding: 0 0 0 10px;
     text-shadow: 0 0 12px #0007;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
-.nombreFormulario {
-    font-weight: bold;
-    padding: 0 0 5px 5px;
-    border-radius: 8px;
-    border: none;
+.divMotivoLabel {
+    text-align: center;
 }
-.emailFormulario {
+.divMotivo {
+    text-align: center;
+    margin: auto;
+}
+.labelMotivoForm {
+    color: azure;
     font-weight: bold;
-    padding: 0 0 5px 5px;
-    border-radius: 8px;
-    border: none;
+    text-shadow: 0 0 12px #0007;
+}
+.motivoForm {
+    font-weight: bold;
+    border-radius: 6px;
+    margin: auto;
+    width: 70%;
+    height: 30px;
 }
 .labelComentarioForm {
     font-weight: bold;
     color: azure;
-    padding: 0 0 0 0;
     text-shadow: 0 0 12px #0007;
-}
-
-.motivoForm {
-    font-weight: bold;
-    border-radius: 6px;
-}
-
-.divNombreForm {
-    padding: 0 0 10px 10px;
-}
-
-.divEmailForm {
-    padding: 0 0 10px 10px;
-}
-
-.comentarioForm {
-    font-weight: bold;
-    width: 95%;
-    padding: 5px 0 0 5px;
-    border-radius: 8px;
-    border: none;
-}
-.divComentarioForm {
-    padding: 0 0 0 10px;
-}
-.labelMotivoForm {
-    padding: 0 0 10px 10px;
-    color: azure;
-    font-weight: bold;
-    text-shadow: 0 0 12px #0007;
-}
-
-.divEnviarForm {
-    padding: 10px 0 20px 37%;
+    margin-left: 16px;
 }
 .enviarForm {
     text-transform: uppercase;
@@ -264,6 +279,11 @@ footer {
     border-radius: 6px;
     border: none;
     font-weight: bold;
+}
+.divEnviarForm {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 /* modificamos el footer */
 .infoFinal {
