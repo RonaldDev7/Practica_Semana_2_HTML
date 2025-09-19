@@ -19,15 +19,14 @@
     <body>
         <header>
             <h1 class="tituloPrincipal" id="inicio">Desarrollador en formacion</h1>
+            <!--BARRA DE NAVEGACION-->
+            <nav>        
+                <a class="navInicio" title="Enlace a la seccion de inicio" href="#inicio">Inicio</a>
+                <a class="navSobreMi" title="Enlace a la seccion de sobre mi" href="#sobre_mi">Sobre mi</a>
+                <a class="navProyectos" title="Enlace a la seccion de proyectos" href="#proyectos">Proyectos</a>
+                <a class="navContacto" title="Enlace a la seccion de cobtacto" href="#contacto">Contacto</a>
+            </nav>
         </header>
-
-        <!--BARRA DE NAVEGACION-->
-        <nav>        
-            <a class="navInicio" title="Enlace a la seccion de inicio" href="#inicio">Inicio</a>
-            <a class="navSobreMi" title="Enlace a la seccion de sobre mi" href="#sobre_mi">Sobre mi</a>
-            <a class="navProyectos" title="Enlace a la seccion de proyectos" href="#proyectos">Proyectos</a>
-            <a class="navContacto" title="Enlace a la seccion de cobtacto" href="#contacto">Contacto</a>
-        </nav>
         
         <!--BLOQUE PRINCIPAL-->
         <main>
@@ -59,31 +58,36 @@
             <section class="seccionTabla" id="proyectos">
                 <p class="pTablaProyecto">Proyectos</p>
                 <table class="tabla">
-                    <tr>
-                        <th class="columna">Nombre</th>
-                        <th class="columna">Descripcion</th>
-                        <th class="columna">Enlace</th>
-                    </tr>
-                    <tr>
-                        <td class="columna">Portafolio</td>
-                        <td class="columna">Mi primera página personal hecha en HTML</td>
-                        <td class="columna"><a href="portafolio.html">Ver proyecto</a></td>
-                    </tr>
-                    <tr>
-                        <td class="columna">Notas App</td>
-                        <td class="columna">Aplicación para tomar notas con HTML y CSS</td>
-                        <td class="columna"><a href="#">Ver proyecto</a></td>
-                    </tr>
-                    <tr>
-                        <td class="columna">Blog Dev</td>
-                        <td class="columna">Un blog simple sobre programación</td>
-                        <td class="columna"><a href="#">Ver proyecto</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th class="columna">Nombre</th>
+                            <th class="columna">Descripcion</th>
+                            <th class="columna">Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="columna">Portafolio</td>
+                            <td class="columna">Mi primera página personal hecha en HTML</td>
+                            <td class="columna"><a href="portafolio.html">Ver proyecto</a></td>
+                        </tr>
+                        <tr>
+                            <td class="columna">Notas App</td>
+                            <td class="columna">Aplicación para tomar notas con HTML y CSS</td>
+                            <td class="columna"><a href="#">Ver proyecto</a></td>
+                        </tr>
+                        <tr>
+                            <td class="columna">Blog Dev</td>
+                            <td class="columna">Un blog simple sobre programación</td>
+                            <td class="columna"><a href="#">Ver proyecto</a></td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
             <section id="contacto">
-                <form class="formularioInfoPersonal" action="">
-                    <p class="pFormTitulo">Formulario de contacto</p>
+                <details class="datailsFormInfoPersonal">
+                    <summary class="summaryFormInfoPersonal">Formualario de contacto</summary>
+                    <form class="formularioInfoPersonal" action="">
                     <fieldset class="fieldsetFormInfoPersonal">
                         <legend class="legendFormulario">Informacion basica</legend>
                         <div class="divForm">
@@ -106,10 +110,9 @@
                             <input class="inputInfoPersonal" type="number" name="telefonos" id="telefono" placeholder="Ingrese su numero de telefono">
                         </div>
                     </fieldset>
-                    </div>
                     <div class="divForm">
                         <label class="labelComentarioForm" for="comentario">Comentario</label>
-                        <textarea rows="9" class="textareaInfoPersonal" rows="8" name="comentarios" id="comentario" placeholder="Ingrese un comentario..." ></textarea>
+                        <textarea rows="9" class="textareaInfoPersonal" name="comentarios" id="comentario" placeholder="Ingrese un comentario..." ></textarea>
                     </div>
                     <div class="divMotivoLabel">
                     <label class="labelMotivoForm" for="motivo">Motivo de contacto</label>
@@ -125,10 +128,11 @@
                         <button class="enviarForm" type="submit">Enviar</button>
                     </div>
                 </form>
+                </details>
             </section>
         </main>
         <footer>
-            <a class="gitHub" title="link de mi perfil de GitHub" href="https://github.com/RonaldDev7">Mi GitHub</a>
+            <a class="gitHub" target="_blank" title="link de mi perfil de GitHub" href="https://github.com/RonaldDev7" rel="noopener noreferrer">Mi GitHub</a>
             <p class="infoFinal">Ronald Alvarez, 2025</p>
         </footer>
     </body>

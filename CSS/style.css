@@ -10,27 +10,22 @@ p {
     line-height: 1.3;
     font-weight: 400;
 }
-h1 {
+h1, h2 {
     text-align: center;
     font-weight: 400;
 }
-h2 {
-    text-align: center;
-    font-weight: 400;
-}
-ol {
+ol, ul, li {
     line-height: 1.3;
-    font-weight: 400px;
+    font-weight: 400;
 }
 ul {
-    line-height: 1.3;
-    font-weight: 400;
     padding: 0 0 7px 0;
 }
 li {
-    line-height: 1.3;
-    font-weight: 400;
     padding: 0 0 7px 0;
+}
+td, th {
+    padding: 6px;
 }
 form {
     line-height: 1.5;
@@ -47,22 +42,25 @@ table {
 a {
     font-weight: 400;
 }
-nav {
-    background: url("../img/conny-schneider-xuTJZ7uD7PI-unsplash.jpg") center / cover fixed #151C47;
-    text-align: center;
-    font-weight: 400;
-    padding: 0 0 3vw 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 header {
-    background: url("../img/conny-schneider-xuTJZ7uD7PI-unsplash.jpg") center / cover fixed #151C47;
     width: 100%;
     text-align: center;
     font-size: 10px;
     padding: 20px 10px;
     box-sizing: border-box;
     margin: 0;
+}
+nav {
+    text-align: center;
+    font-weight: 400;
+    padding: 0 0 0 0;
+    margin: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-size: 15px
+}
+nav, header {
+    background: url("../img/conny-schneider-xuTJZ7uD7PI-unsplash.jpg") center / cover fixed #151C47;
 }
 footer {
     text-align: center;
@@ -86,30 +84,8 @@ footer {
     margin: 0;
 }
 /* Modificando Nav */
-.navInicio {
+.navInicio, .navSobreMi, .navProyectos, .navContacto {
     padding: 0 40px 0 0;
-    text-decoration: none;
-    border: 2px solid rgb(224, 231, 242);
-    border-radius: 4px;
-    color: azure;
-}
-
-.navSobreMi {
-    padding: 0 40px 0 0;
-    text-decoration: none;
-    border: 2px solid rgb(224, 231, 242);
-    border-radius: 4px;
-    color: azure;
-}
-
-.navProyectos {
-    padding: 0 40px 0 0;
-    text-decoration: none;
-    border: 2px solid rgb(224, 231, 242);
-    border-radius: 4px;
-    color: azure;
-}
-.navContacto {
     text-decoration: none;
     border: 2px solid rgb(224, 231, 242);
     border-radius: 4px;
@@ -187,19 +163,17 @@ footer {
 .tabla {
     border: 2px solid black;
     width: 100%;
+    box-shadow: 0 0 12px 0 #0007;
 }
 .columna {
     border: 2px solid black;
 }
 /* modificamos dentro del formulario */
-.pFormTitulo {
-    text-transform: uppercase;
+.datailsFormInfoPersonal {
     text-align: center;
     font-weight: bold;
-    color: azure;
-    font-size: 21px;
-}
-.formularioInfoPersonal {
+    font-size: 23px;
+    text-transform: uppercase;
     background-color: #205C5A;
     border: 4px solid #184746   ;
     border-radius: 9px;
@@ -207,6 +181,18 @@ footer {
     margin: auto;
     max-width: 600px;
     box-shadow: 0 0 15px #184746;
+}
+.summaryFormInfoPersonal {
+    color: azure;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-shadow: 0 0 12px #0007;
+}
+.formularioInfoPersonal {
+    background-color: #205C5A;
+    width: 95%;
+    margin: auto;
+    max-width: 600px;
 }
 .fieldsetFormInfoPersonal {
     margin-top: 10px;
@@ -297,4 +283,7 @@ footer {
 }
 .gitHub {
     margin: 5px 0;
+    color: rgb(42, 83, 164);
+    text-decoration: none;
+    text-shadow: 0 0 12px #151C47;
 }
