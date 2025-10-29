@@ -1,0 +1,94 @@
+body {
+    font-family: Montserrat;
+}
+h1 {
+    color: #48e;
+    margin: 30px;
+    text-align: center;
+}
+/*Modificando Divs*/
+div {
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+div:empty {
+    border: none;
+}
+#divLista {
+    margin: auto;
+    width: 10%;
+    border: none;
+}
+#divLista::selection {
+    color: #000;
+    background-color: #82d;
+}
+/*lista*/
+#ulPrimero {
+    background-color: #ccc;
+    padding: 0;
+}
+/*cuando se pasa el mause encima del elemento*/
+h1:hover {
+    color: #000;
+    background-color: #888;
+}
+/*cuando se da click al elemento*/
+h1:active {
+    color: #888;
+    background-color: #000;
+}
+li {
+    color: #222;
+    padding: 5px;
+}
+/*seleccionar el primer li*/
+li:first-child {
+    color: #e84;
+}
+li:first-child:active {
+    font-size: 18px;
+    background-color: #000;
+}
+
+/*seleccionar el ultimo li*/
+li:last-child {
+    color: #e84;
+}
+li:last-child:active {
+    font-size: 18px;
+    background-color: #000;
+}
+
+/*seleccionar cualquiera li*/
+li:nth-of-type(2n) {
+    color: #7f8;
+    background: #fff;
+}
+li:nth-of-type(2n):active {
+    font-size: 18px;
+    background-color: #000;
+}
+/*seleccionando con not*/
+#ulPrimero li:not(.excluir) {
+    color: #82d;
+}
+#ulPrimero li:not(.excluir):active {
+    font-size: 18px;
+    background-color: #000;
+}
+/*ejemplo is*/
+#section1 :is(.elemento1, .elemento4, .elemento6) {
+    color: cadetblue;
+}
+
+/*ejemplo has*/
+#ulPrimero:has(.activar) {
+    background-color: #70aaff44;
+}
+
+.elemento4:has(+li) {
+    background-color: #7f84;
+}
+
+/*carlos vale monda*/

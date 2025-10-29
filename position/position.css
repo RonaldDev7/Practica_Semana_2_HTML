@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    background-color: #ededed;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.sticky {
+    width: 200px;
+    height: 100px;
+    background-color: #a0aa;
+    position: sticky;
+    top: 80px;
+}
+.sticky--2 {
+    top: 200px;
+}
+.sticky--3 {
+    top: 320px;
+}
+.sticky__text {
+    color: azure;
+    position: absolute;
+    margin: auto;
+    top: 40px;
+    left: 70px;
+}
+
+/*POSITION ABSOLUTE*/
+.modal {
+    height: 100vh;
+    background-color: #1112;
+    z-index: 50;
+    box-sizing: border-box;
+    border-color: transparent;
+    position: fixed;
+}
+.modal__content {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    padding: 7px 20px;
+    margin-top: 50px;
+    position: relative;
+    border: 1px solid #1116;
+    border-radius: 6px;
+}
+
+/*POSITION FIXED*/
+.fixed {
+    width: 210px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #111f;
+    border-right: none;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+}
+.fixed__title {
+    margin: 0;
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 10px;
+}
+.fixed__text {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 3px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.modal__title {
+    margin-top: 2px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.modal__text {
+    text-align: justify;
+}
+
+.modal__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #900f;
+    color: #fff;
+    border-radius: 3px;
+    padding: 3px 12px;
+}
+
+.section--cajas {
+    display: inline-block;
+}
+
+/*POSITION RELATIVE*/
+
+.section__contenedor {
+    border: 2px solid #111f;
+    border-radius: 6px;
+    margin: 10px;
+    width: 500px;
+    box-shadow: 0 0 50px 0 #111f;
+    position: relative;
+}
+
+.section__caja {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: azure;
+    position: relative;
+    z-index: 10;
+}
+
+.section__caja:first-of-type {
+    left: 50px;
+    top: 200px;
+    z-index: 40;
+}
+.caja--blue {
+    background-color: #089f;
+    left: 100px;
+    top: 50px;
+    z-index: 30;
+}
+.caja--red {
+    background-color: #900f;
+    left: 150px;
+    top: -100px;
+    z-index: 20;
+}
+.caja--green {
+    background-color: #090f;
+    left: 225px;
+    top: -150px;
+}
+.caja--black {
+    background-color: #111f;
+    left: 275px;
+    z-index: 20;
+    top: -200px;
+}
+.caja--purple {
+    background-color: #909f;
+    left: 300px;
+    top: -250px;
+    z-index: 30;
+}
+

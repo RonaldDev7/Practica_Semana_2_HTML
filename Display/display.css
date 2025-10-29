@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.nav {
+    background: url("../img/conny-schneider-xuTJZ7uD7PI-unsplash.jpg") center / cover fixed #151C47;
+    text-align: center;
+    padding: 6px;
+}
+
+.nav__item {
+    display: inline-block;
+    border: 2px solid azure;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.nav__item:hover {
+    border: 2px solid  rgb(42, 83, 164);
+}
+
+.nav__link {
+    color: azure;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 15px;
+}
+.nav__link:hover {
+    color:  rgb(42, 83, 164);
+    font-size: 18px;
+}

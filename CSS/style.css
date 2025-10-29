@@ -42,24 +42,44 @@ table {
 a {
     font-weight: 400;
 }
-header {
+.header-principal {
     width: 100%;
     text-align: center;
     font-size: 10px;
-    padding: 20px 10px;
+    padding: 5px 10px;
     box-sizing: border-box;
     margin: 0;
 }
-nav {
+.header-principal {
+    margin: 0;
+    position: sticky;
+    top: 0px;
+}
+
+.header-principal__nav {
     text-align: center;
     font-weight: 400;
-    padding: 0 0 0 0;
-    margin: 0;
-    margin-top: 20px;
+    margin-top: 10px;
+    text-align: center;
     box-sizing: border-box;
-    font-size: 15px
 }
-nav, header {
+.nav__item {
+    display: inline-block;
+    border: 2px solid azure;
+    border-radius: 8px;
+    margin-left: 20px;
+    padding: 0;
+}
+.nav__link {
+    color: azure;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.header-principal__nav, .header-principal {
     background: url("../img/conny-schneider-xuTJZ7uD7PI-unsplash.jpg") center / cover fixed #151C47;
 }
 footer {
@@ -77,20 +97,26 @@ footer {
     margin: auto;
     padding: 0 0 30px 0;
 }
-.tituloPrincipal {
+.header-principal > .header-principal__title {
     font-weight: bold;
     color: azure;
     font-size: 4em;
     margin: 0;
 }
 /* Modificando Nav */
-.navInicio, .navSobreMi, .navProyectos, .navContacto {
-    padding: 0 40px 0 0;
-    text-decoration: none;
-    border: 2px solid rgb(224, 231, 242);
-    border-radius: 4px;
-    color: azure;
+
+.nav__item, .nav__link {
+    transition: color, border, font-size 0.3s;
 }
+
+.nav__item:hover {
+    border: 2px solid  rgb(42, 83, 164);
+}
+.nav__link:hover {
+    color:  rgb(42, 83, 164);
+    font-size: 18px;
+}
+
 /*Sobre mi*/
 .sobreMi {
     margin: 0;
@@ -119,8 +145,7 @@ footer {
     box-shadow: 0 0 50px 0 #0007;
 }
 .imagenRonald {
-    width: 100%;
-    max-width: 300px;
+    width: 300px;
     height: 350px;
     border-radius: 7px 7px 0 0;
 }
@@ -188,6 +213,10 @@ footer {
     margin-top: 10px;
     text-shadow: 0 0 12px #0007;
 }
+.summaryFormInfoPersonal:hover {
+    text-decoration: underline;
+    font-size: 25px;
+}
 .formularioInfoPersonal {
     background-color: #205C5A;
     width: 95%;
@@ -211,7 +240,7 @@ footer {
 }
 .textareaInfoPersonal {
     font-weight: bold;
-    font-family: Montserrat, arial;
+    font-family: inherit;
     min-width: 95%;
     min-height: 150px;
     padding: 5px 0 0 5px;
@@ -275,7 +304,6 @@ footer {
 .infoFinal {
     font-style: oblique;
     font-weight: 700;
-    font-family: Montserrat;
     margin: 5px 0;
     text-align: center;
     color: white;
@@ -286,4 +314,8 @@ footer {
     color: rgb(42, 83, 164);
     text-decoration: none;
     text-shadow: 0 0 12px #151C47;
+}
+.gitHub:hover {
+    text-decoration: underline;
+    font-size: 18px;
 }

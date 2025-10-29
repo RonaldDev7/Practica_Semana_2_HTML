@@ -1,0 +1,68 @@
+body {
+    font-family: Montserrat;
+    text-align: center;
+}
+div {
+    padding: 20px;
+}
+summary {
+    padding: 10px;
+}
+#emailLabel {
+    font-weight: bold;
+}
+#emailLabel:has(input:valid) {
+    color: #4e0;
+}
+#emailLabel:has(input:invalid) {
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4e0;
+}
+a:link {
+    color: cadetblue;
+}
+
+h1::first-letter {
+    color: #48e;
+    font-size: 2em;
+}
+#divP1::first-line {
+    color: #48ea;
+    font-weight: bold;
+}
+#divP1::selection{
+    background-color: aquamarine;
+    color: #0c0707;
+}
+#divP1 {
+    width: 500px;
+    margin: auto;
+}
+#email {
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+
+#email::placeholder {
+    color: #48ea;
+    background-color: #ccc5;
+}
+
+#ulPrimero {
+    text-align: center;
+}
+li::marker {
+    color: transparent;
+}
+li::before {
+    content: "Elemento: ";
+    font-weight: bold;
+    color: #48e5;
+}
